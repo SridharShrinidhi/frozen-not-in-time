@@ -1,0 +1,205 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.outer-banner {
+  height: 500px;
+  border: 60px 0;
+  border-color: #b3fbff;
+  border-style: solid;
+  background-image: repeating-linear-gradient(-45deg, #c9fcff, #c9fcff 5px, #d4fdff 10px, #d4fdff 20px);
+}
+
+.inner-banner {
+  margin: 8em 0 0 10%;
+}
+
+h1 {
+  color: #990073;
+  transform-origin: left center;
+  transform: rotate(-8deg);
+  -webkit-text-shadow: 5px 5px 2px #d4fdff;
+  text-shadow: 5px 5px 2px #d4fdff;
+}
+
+p {
+  transform-origin: left center;
+  transform: rotate(-6deg);
+  -webkit-text-shadow: 5px 5px 2px #d4fdff;
+  text-shadow: 5px 5px 2px #d4fdff;
+}
+
+p,
+a {
+  color: #c09;
+  text-decoration: none;
+}
+
+.width {
+  max-width: 19em;
+}
+
+.btn-ghost {
+  border-color: #990073;
+  color: #c09;
+  border-style: solid;
+}
+
+.a:hover {
+  background-color: #c09;
+  opacity: .9;
+}
+
+.btn-ghost:hover {
+  border-color: #990073;
+  color: #c09;
+  border-style: solid;
+}
+
+@keyframes cone {
+
+  0% {
+    visibility: visible;
+    top: -350px;
+  }
+
+  100% {
+    visibility: visible;
+    top: 300px;
+  }
+
+}
+
+@keyframes mint-chip {
+
+  0% {
+    visibility: visible;
+    top: -350px;
+  }
+
+  100% {
+    visibility: visible;
+    top: 190px;
+  }
+
+}
+
+@keyframes chocolate-chip {
+
+  0% {
+    visibility: visible;
+    top: -350px;
+  }
+
+  100% {
+    visibility: visible;
+    top: 100px;
+  }
+
+}
+
+@keyframes vanilla-fudge {
+
+  0% {
+    visibility: visible;
+    top: -350px;
+  }
+
+  100% {
+    visibility: visible;
+    top: 20px;
+  }
+
+}
+
+@keyframes cherry {
+
+  0% {
+    visibility: visible;
+    top: -350px;
+  }
+
+  100% {
+    visibility: visible;
+    top: -60px;
+  }
+
+}
+
+@keyframes t {
+
+  0% {
+    visibility: visible;
+    filter: blur(20px);
+    top: -350px;
+  }
+
+  100% {
+    visibility: visible;
+    filter: none;
+    top: 100px;
+  }
+
+}
+
+.cone {
+  animation: cone .3s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  right: 200px;
+  z-index: 1;
+}
+
+.mint-chip {
+  animation: mint-chip .3s .3s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  z-index: 0;
+  right: 200px;
+}
+
+.chocolate-chip {
+  animation: chocolate-chip .3s .6s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  z-index: 2;
+  right: 200px;
+}
+
+.vanilla-fudge {
+  animation: vanilla-fudge .3s .9s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  z-index: 3;
+  right: 200px;
+}
+
+.cherry {
+  animation: cherry .3s 1.2s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  z-index: 4;
+  right: 195px;
+}
+
+.text {
+  animation: t .3s 1s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+  visibility: hidden;
+  left: auto;
+}
