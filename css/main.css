@@ -15,22 +15,22 @@ body {
 }
 
 .inner-banner {
-  margin: 8em 0 0 10%;
+  margin: 8em 0 0 5%;
 }
 
 h1 {
   color: #990073;
   transform-origin: left center;
-  transform: rotate(-8deg);
+  transform: rotate(-7deg);
   -webkit-text-shadow: 5px 5px 2px #d4fdff;
-  text-shadow: 5px 5px 2px #d4fdff;
+  text-shadow: 5px 2px 2px #e2e2e2;
 }
 
 p {
   transform-origin: left center;
-  transform: rotate(-6deg);
+  transform: rotate(-5deg);
   -webkit-text-shadow: 5px 5px 2px #d4fdff;
-  text-shadow: 5px 5px 2px #d4fdff;
+  text-shadow: 5px 2px 2px #e2e2e2;
 }
 
 p,
@@ -43,21 +43,27 @@ a {
   max-width: 19em;
 }
 
+.btn,
+.btn:hover {
+  animation: t .3s 1s linear;
+  animation-fill-mode: forwards;
+}
+
 .btn-ghost {
   border-color: #990073;
   color: #c09;
   border-style: solid;
-}
-
-.a:hover {
-  background-color: #c09;
-  opacity: .9;
+  background-color: transparent;
+  opacity: 1;
 }
 
 .btn-ghost:hover {
   border-color: #990073;
   color: #c09;
   border-style: solid;
+  background-color: rgba(153, 0, 115, .1);
+  animation: t .3s 1s linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes cone {
@@ -69,7 +75,7 @@ a {
 
   100% {
     visibility: visible;
-    top: 300px;
+    top: 320px;
   }
 
 }
@@ -83,7 +89,7 @@ a {
 
   100% {
     visibility: visible;
-    top: 190px;
+    top: 215px;
   }
 
 }
@@ -97,7 +103,7 @@ a {
 
   100% {
     visibility: visible;
-    top: 100px;
+    top: 120px;
   }
 
 }
@@ -111,7 +117,7 @@ a {
 
   100% {
     visibility: visible;
-    top: 20px;
+    top: 40px;
   }
 
 }
@@ -125,7 +131,7 @@ a {
 
   100% {
     visibility: visible;
-    top: -60px;
+    top: -40px;
   }
 
 }
@@ -141,7 +147,7 @@ a {
   100% {
     visibility: visible;
     filter: none;
-    top: 100px;
+    top: 115px;
   }
 
 }
@@ -151,8 +157,8 @@ a {
   animation-fill-mode: forwards;
   position: absolute;
   visibility: hidden;
-  width: 200px;
-  right: 200px;
+  width: 180px;
+  right: 10%;
   z-index: 1;
 }
 
@@ -161,9 +167,9 @@ a {
   animation-fill-mode: forwards;
   position: absolute;
   visibility: hidden;
-  width: 200px;
+  width: 180px;
   z-index: 0;
-  right: 200px;
+  right: 10%;
 }
 
 .chocolate-chip {
@@ -171,29 +177,29 @@ a {
   animation-fill-mode: forwards;
   position: absolute;
   visibility: hidden;
-  width: 200px;
+  width: 180px;
   z-index: 2;
-  right: 200px;
+  right: 10%;
 }
 
 .vanilla-fudge {
-  animation: vanilla-fudge .3s .9s linear;
+  animation: vanilla-fudge .3s .7s linear;
   animation-fill-mode: forwards;
   position: absolute;
   visibility: hidden;
-  width: 200px;
+  width: 180px;
   z-index: 3;
-  right: 200px;
+  right: 10%;
 }
 
 .cherry {
-  animation: cherry .3s 1.2s linear;
+  animation: cherry .3s 1.1s linear;
   animation-fill-mode: forwards;
   position: absolute;
   visibility: hidden;
-  width: 200px;
+  width: 180px;
   z-index: 4;
-  right: 195px;
+  right: 10%;
 }
 
 .text {
@@ -201,5 +207,5 @@ a {
   animation-fill-mode: forwards;
   position: absolute;
   visibility: hidden;
-  left: auto;
+  left: 4.5%;
 }
